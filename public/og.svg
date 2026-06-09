@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="monospace">
+  <defs>
+    <radialGradient id="vig" cx="50%" cy="44%" r="78%">
+      <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.45"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <rect width="1200" height="630" fill="url(#vig)"/>
+
+  <rect x="80" y="82" width="1040" height="3" fill="#ededed"/>
+  <rect x="80" y="546" width="1040" height="3" fill="#ededed"/>
+
+  <!-- brand mark, matches favicon.svg -->
+  <g>
+    <rect x="80" y="102" width="30" height="30" fill="#ff4630"/>
+    <rect x="114" y="102" width="30" height="30" fill="#262626"/>
+    <rect x="80" y="136" width="30" height="30" fill="#262626"/>
+    <rect x="114" y="136" width="30" height="30" fill="#ededed"/>
+    <text x="166" y="144" font-size="26" font-weight="500" letter-spacing="7" fill="#8a8a86">FRAGMENTARY</text>
+  </g>
+
+  <!-- scope chip, mirrors the editor filename -->
+  <g>
+    <rect x="922" y="110" width="198" height="44" fill="none" stroke="#3a3a3a" stroke-width="1.5"/>
+    <circle cx="944" cy="132" r="4.5" fill="#19d1e6"/>
+    <text x="960" y="139" font-size="17" font-weight="400" letter-spacing="1.5" fill="#ededed">FRAGMENT.GLSL</text>
+  </g>
+
+  <!-- hero, the site's own tagline -->
+  <text x="78" y="332" font-size="150" font-weight="800" letter-spacing="-4" fill="#ededed">SHADER</text>
+  <text x="78" y="466" font-size="150" font-weight="800" letter-spacing="-4" fill="#ededed">WORKSHOP</text>
+
+  <!-- GLSL entry point, colored with the editor's syntax palette -->
+  <text x="80" y="522" font-size="20" font-weight="400" letter-spacing="0.5" xml:space="preserve"><tspan fill="#64adf7">void </tspan><tspan fill="#f3c649">main</tspan><tspan fill="#8a8a86">() { </tspan><tspan fill="#d9d9d9">fragColor </tspan><tspan fill="#8a8a86">= </tspan><tspan fill="#54ccde">vec4</tspan><tspan fill="#8a8a86">(</tspan><tspan fill="#d9d9d9">gl_FragCoord.xy </tspan><tspan fill="#8a8a86">/ </tspan><tspan fill="#d9d9d9">uResolution.xy</tspan><tspan fill="#8a8a86">, </tspan><tspan fill="#f69851">0.0</tspan><tspan fill="#8a8a86">, </tspan><tspan fill="#f69851">1.0</tspan><tspan fill="#8a8a86">); }</tspan></text>
+
+  <text x="80" y="596" font-size="26" font-weight="400" letter-spacing="1" fill="#8a8a86">A personal GLSL fragment shader sandbox.</text>
+</svg>
